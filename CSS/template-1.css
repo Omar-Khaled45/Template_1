@@ -113,22 +113,24 @@ header .container .links ul::before {
     right: 5px;
 }
 
-header .container .links ul a {
+header .container .links ul li a {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    transition: padding var(--mainTrans);
     text-decoration: none;
     color: black;
 }
 
-header .container .links ul a li {
-    padding: 15px;
+header .container .links ul li a:not(.special) {
     border-bottom: 1px solid #ddd;
-    transition: padding var(--mainTrans);
 }
 
 header .container .links:hover ul {
     display: inline-block;
 }
 
-header .container .links ul li:hover {
+header .container .links ul a:hover {
     padding-left: 25px;
 }
 /* End Header */
